@@ -16,11 +16,12 @@ function responder_Requisicao(requisicao, resposta) {
         resposta.write("<html>");
         resposta.write("<head>");
         resposta.write("<title>Tabuada NOde</title>");
+        resposta.write('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">')
         resposta.write("<meta charset='UTF-8'>");
         resposta.write("<head>");
-        resposta.write("<body>");
-        resposta.write("<p>Se isso aparecer esta funcionando</p>");
-        resposta.write("<table>");
+        resposta.write("<body class='bg-dark'>");
+        resposta.write("<div class='container mt-5 p-3 border border-dark rounded bg-light'>");
+        resposta.write("<table class='table'>");
         resposta.write("<tr> <th>Tabuada do " + tabuada + " </th> </tr>");    
         if(tabuada && sequencia){
             for (let i = 0; i <= parseInt(sequencia); i++) {
@@ -52,7 +53,7 @@ function responder_Requisicao(requisicao, resposta) {
         }
 
         resposta.write("</table>");
-        
+        resposta.write("</div>")
         resposta.write("</body>");
         resposta.write("</html>");
         resposta.end();
