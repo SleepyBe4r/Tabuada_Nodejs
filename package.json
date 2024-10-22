@@ -1,0 +1,13 @@
+{
+  "name": "tabuada_nodejs",
+  "version": "1.0.0",
+  "description": "app web de uma tabuada pelo http",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cayo Henrique dos Santos Dias",
+  "license": "ISC"
+}
