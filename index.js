@@ -50,6 +50,12 @@ function responder_Requisicao(requisicao, resposta) {
                 resposta.write("</td>");    
                 resposta.write("</tr>");    
             }
+        } else{
+            resposta.write("<tr>");    
+                resposta.write("<th>");    
+                resposta.write("Digite /?tabuada=3&sequencia=25 após o link para criar a tabuada");                
+                resposta.write("</th>");    
+                resposta.write("</tr>");    
         }
 
         resposta.write("</table>");
